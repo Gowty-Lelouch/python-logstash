@@ -130,6 +130,7 @@ class LogstashFormatterVersion1(LogstashFormatterBase):
             # Extra Fields
             'level': record.levelname,
             'logger_name': record.name,
+            'lineno':record.lineno
         }
 
         # Add extra fields
